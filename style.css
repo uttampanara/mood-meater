@@ -1,0 +1,85 @@
+/*mood meter*/
+.mood-meter-box{
+    height: 135px;
+    padding-top: 10px;
+}
+.mood-meter-box .border-box{
+    position: relative;
+    width:200px;
+    height: 200px;
+    border-radius: 360px;
+    background-color: #3D4653;
+    margin: 0 auto;
+    display: table;
+}
+.mood-meter-box .md-outer-box{
+    position: relative;
+    /*border:18px solid #3D4653;*/
+    background-color: #fff;
+    background: black;
+    border-radius: 360px;
+    display: table;
+    width:162px;
+    height: 162px;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(left, #ADD143 ,#DAB830, #CF2827); 
+    background: -o-linear-gradient(right, #ADD143,#DAB830, #CF2827); 
+    background: -moz-linear-gradient(right, #ADD143,#DAB830, #CF2827);
+    background: linear-gradient(to right, #ADD143 ,#DAB830,#CF2827);
+}
+.mood-meter-box .md-outer-box .table-cell,.mood-meter-box .border-box .table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.mood-meter-box .md-outer-box .table-cell .md-inner-box{
+    background-color: #fff;
+    border-radius: 360px;
+    width:84px;
+    height: 84px;
+    margin: 0 auto;
+}
+.mood-meter-box .md-outer-box .circle-link{
+    height: 25px;
+    width: 25px;
+    border:2px solid #ADB0B0;
+    border-radius: 360px;
+    color: #ADB0B0;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #fff;    
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+.mood-meter-box .md-outer-box .current{
+    border:2px solid #fff;
+    background-color: #DAB42F;  
+    color: #fff;
+}
+.mood-meter-box .md-outer-box .one{
+    left:-35px;
+    bottom:65px;
+}
+.mood-meter-box .md-outer-box .two{
+    left:-9px;
+    top:-5px;
+}
+.mood-meter-box .md-outer-box .three{
+    left: 68px;
+    top: -35px;
+}
+.mood-meter-box .md-outer-box .four{
+    right: -12px;
+    top: -5px;
+}
+.mood-meter-box .md-outer-box .five{
+    right:-38px;
+    bottom:65px;
+}
+.mood-meter-box .md-outer-box #arrow{
+    position: absolute;
+    top: 15px;
+    left: 39%;
+    transform:rotate(-90deg);
+    transform-origin:center 67px;
+}

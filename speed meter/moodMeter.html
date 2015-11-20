@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mood-meter-box">
+        <div class="border-box">
+            <div class="table-cell">
+                <div class="md-outer-box">
+                    <div class="table-cell">
+                        <div class="md-inner-box">
+                            <div class="circle-link one" value="-90" level="1">1</div>
+                            <div class="circle-link two current" value="-45" level="2">2</div>
+                            <div class="circle-link three" value="0" level="3">3</div>
+                            <div class="circle-link four" value="45" level="4">4</div>
+                            <div class="circle-link five" value="90" level="5">5</div>
+                        </div>                                                                
+                    </div>
+                    <img class="img-responsive" src="arrow.png" id="arrow">                                     
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-1.11.0.js"></script>
+    <script>
+    	(function () {
+        	$(".circle-link").click(function(){
+                $(".circle-link").each(function(){
+                   $(this).removeClass('current');
+                })
+                $(this).addClass('current');  
+                var val= $(this).attr('value');
+                // $('#arrow img').css('transform','rotate(-55deg)');
+                $('#arrow').css('transform','rotate('+val+'deg)');
+                $('#arrow').css('transition','transform 1s');
+            });
+                   
+        })(jQuery);
+    </script>
+</body>
+</html>
